@@ -1,0 +1,23 @@
+:root{
+    --c-negro:#09070D;
+    --c-blanco:#FFFFFF;
+    --c-morado:#6D2CD3;
+    --c-celeste:#3B92FE;    
+    --c-naranja:#EC852D;    
+    --c-verde:#3ADDCC;
+    --grey1: #343338;
+    --grey2: #666469;
+    --grey3: #98979A;
+    --grey4: #CAC9CC;
+    --grey5: #F2F2F2;
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.enfasis{
+    color:var(--c-morado);
+}
