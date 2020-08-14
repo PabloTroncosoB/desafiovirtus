@@ -15,9 +15,20 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-
+    font-size: 2em;
 }
-
+h1{
+    font-weight: bolder;
+    font-size: 3em;
+}
 .enfasis{
     color:var(--c-morado);
+}
+.panel{
+    height: 100vh;
+}
+.panel:nth-child(2n+2) {background: var(--grey5)}
+.titulo{
+    display: flex;
+    align-items: center;
 }
