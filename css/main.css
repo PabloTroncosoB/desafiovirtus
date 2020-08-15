@@ -15,20 +15,43 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
 }
+
 h1{
     font-weight: bolder;
     font-size: 3em;
 }
+h2{
+    font-weight: bold;
+}
+h3{
+    font-weight: bold;
+}
+
 .enfasis{
     color:var(--c-morado);
 }
+
+.enfasisGliph{
+    fill:var(--c-morado);
+    height: 4em;
+    margin-top: 1em;
+}
+
 .panel{
     height: 100vh;
+    padding: 1em;
 }
-.panel:nth-child(2n+2) {background: var(--grey5)}
+
+.panel:nth-child(2n+2) {
+    background: var(--grey5)
+}
+
 .titulo{
-    display: flex;
-    align-items: center;
+    background-image: url("../img/digital-world-map-faded.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+

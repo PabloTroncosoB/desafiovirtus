@@ -11,10 +11,38 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>  
-        
+        <script>
+            const historias=[
+                {
+                    "nombre":"Estrategia Digital",
+                    "texto":"Encontramos la intersección de las necesidades de los usuarios y la propuesta de valor de nuestros clientes, para luego innovar y alcanzar las metas",
+                    "gliph":"torre"
+                },
+                {
+                    "nombre":"Diseño de experiencia del cliente",
+                    "texto":"A través del lenguaje de diseño, creamos experiencias consistentes y eficaces que trabajan para las personas a las que servimos",
+                    "gliph":"cabeza"
+                },
+                {
+                    "nombre":"Estrategia Digital",
+                    "texto":"Gestionamos la demanda en base a los requisitos del pipeline del negocio para asegurar una entrega constante que se prioriza de manera integral",
+                    "gliph":"digital"
+                },
+                {
+                    "nombre":"Ejecución Digital",
+                    "texto":"Convertimos los conceptos en realidad a través de un prototipeo ágil y desarrollo de MVP para transformar e innovar con velocidad",
+                    "gliph":"agil"
+                },
+                {
+                    "nombre":"Digital O&M",
+                    "texto":"Ofrecemos a nuestros clientes desarrollo y mejora continua a través del análisis de data y el feedback del cliente",
+                    "gliph":"engranaje"
+                },
+            ];
+        </script>
         <div class="container-fluid">
             <div class="row panel titulo">
-              <div class="col-lg-8 text-right">
+                <div class="col-lg-8 text-right align-self-center">
                     <h1>
                         <img 
                             src="black.svg" 
@@ -22,24 +50,35 @@
                             width="80%"
                            />
                         </h1></div>
-              <div class="col-lg-4 text-left"><h3>Virtus digital, tu mejor opción</h3></div>
+                <div class="col-lg-4 text-left align-self-center"><h2>En Virtus digital adaptamos la <span class="enfasis">transformación digital</span> a su organización</h2></div>
             </div>
-            <div class="row panel titulo text-center">
-                <div class="col-md-3">¿Que hacemos?</div>
-                <div class="col-md-9">Entregamos el mejor servicio </div>
+            <div class="row panel  text-center">
+                <div class="col-md-3 align-self-center"><h2>¿Que hacemos?</h2></div>
+                <div class="col-md-9 align-self-center">
+                    Somos líderes en <span class="enfasis">transformación digital</span>. 
+                    Con una mirada multidisciplinaria e integral, abordamos proyectos en distintas áreas del negocio, 
+                    según las necesidades de cada cliente: Estrategia, Organización, Cultura y Liderazgo, Transformación 
+                    Digital y Excelencia Operacional.
+                </div>
             </div>
             <div class="row panel text-center">
                 <div class="col-12">
-                    Testimonios de nuestros clientes
+                    <h2>
+                        Trabajamos en 5 frentes digitales
+                    </h2>
                 </div>
-                <div class="col-md-4">1</div>
-                <div class="col-md-4">2</div>
-                <div class="col-md-4">3</div>
+                <script>
+                    historias.map(function(x) {
+                        document.write('<div class="col-md"><div class="card" style="width: 18rem;"><img class="enfasisGliph card-img-top" src="img/'+x.gliph+'.svg" alt="svg '+x.gliph+'" width="50%"><div class="card-body"><h3 class="card-title">'+x.nombre+'</h3><p class="card-text">'+x.texto+'</p></div></div></div>');
+                    });
+                </script>
               </div>
         </div>
         
         <h1>abc 123</h1>
         <p>p</p>
+
+        
     </body>
 </html>
 
