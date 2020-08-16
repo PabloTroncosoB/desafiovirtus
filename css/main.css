@@ -55,3 +55,16 @@ h3{
     background-size: cover;
 }
 
+#re:before{
+    animation: colorTexto 8s infinite;
+    content: 'Load';
+    color:var(--c-negro);
+}
+
+@keyframes colorTexto {
+    0% {color:var(--c-negro); content: "Load"}
+    25% {color:var(--c-morado); content: "Act"}
+    50% {color:var(--c-verde); content: "Connect"}
+    75% {color:var(--c-celeste); content: "Wire"}
+    100% {color:var(--c-negro); content: "Load"}
+}
