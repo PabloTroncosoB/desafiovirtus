@@ -95,6 +95,3 @@ a:hover, a:focus, a:active {
     text-decoration: none;
     color:var(--c-morado);
 }
-.row.contacto, .row.pie{
-    margin-right: 0px;
-}
