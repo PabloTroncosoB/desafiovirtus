@@ -41,15 +41,15 @@
             </div>
 
 
-            <div class="row panel text-center justify-content-center">
+            <div class="row panel justify-content-arround">
                 <div class="col-12 text-left">
                     <h2>
-                        Trabajamos en <script>document.write(frentes.length)</script> frentes digitales
+                        Trabajamos en <script>document.write(frentes.length)</script> frentes digitales<br><br>
                     </h2>
                 </div>
                 <script>
                     frentes.map(function(x) {
-                        document.write('<div class="col-md justify-content-around"><div class="card" style="width: 18rem;border:none"><img class="enfasisGliph card-img-top" src="img/'+x.gliph+'.svg" alt="svg '+x.gliph+'"><div class="card-body"><h3 class="card-title">'+x.nombre+'</h3><p class="card-text">'+x.texto+'</p></div></div></div>');
+                        document.write('<div class="col-md"><div class="card" style="min-width: 18rem;border:none"><img class="enfasisGliph card-img-top" src="img/'+x.gliph+'.svg" alt="svg '+x.gliph+'"><div class="card-body"><h3 class="card-title">'+x.nombre+'</h3><p class="card-text">'+x.texto+'</p></div></div></div>');
                     });
                 </script>
             </div>
